@@ -8,4 +8,5 @@
 <h3>Sumário </h3>
 <ul>
 <li> O que é um algoritmo? </li>
+<li> Algoritmos de Ordenação </li>
 </ul>
