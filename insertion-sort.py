@@ -12,15 +12,14 @@ valueToChange = 0 #Valor a ser trocado
 #loop para ler todo o vetor
 for i in range (1, size):
     
-    valueToInsert = A[i]
-    currentPosition = i
+    valueToInsert = A[i] #x
+    currentPosition = i #j
     
     #Loop invariante / Verifica se os numeros são maiores que 0 e se são iguais ao da posição corrente do índice do vetor
-    while (currentPosition > 0 and A[currentPosition-1] > valueToChange):
-        A[currentPosition] = A[currentPosition - 1]
+    while (currentPosition >= 0 and valueToInsert < A[currentPosition]):
+        A[currentPosition + 1] = A[currentPosition]
         currentPosition = currentPosition - 1
-        print(A) #Imprime os valores ordenados (apenas para fim de log)
+    A[currentPosition + 1] = valueToInsert    
         
 
-    A[currentPosition] = valueToChange
 print(A) #Imprime os valores ordenados
