@@ -19,6 +19,8 @@ for i in range (1, size):
     while (currentPosition > 0 and A[currentPosition-1] > valueToChange):
         A[currentPosition] = A[currentPosition - 1]
         currentPosition = currentPosition - 1
+        print(A) #Imprime os valores ordenados (apenas para fim de log)
+        
 
     A[currentPosition] = valueToChange
 print(A) #Imprime os valores ordenados
